@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/et_first_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/first_number"
+        android:inputType="numberDecimal"
+        android:textSize="@dimen/text_size" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        app:selectionRequired="true"
+        app:singleSelection="true">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_plus"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="@dimen/chip_width"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/plus"
+            android:textAlignment="center"
+            android:textSize="@dimen/text_size" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_minus"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="@dimen/chip_width"
+            android:layout_height="wrap_content"
+            android:text="@string/minus"
+            android:textAlignment="center"
+            android:textSize="@dimen/text_size" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_multiply"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="@dimen/chip_width"
+            android:layout_height="wrap_content"
+            android:text="@string/multiply"
+            android:textAlignment="center"
+            android:textSize="@dimen/text_size" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_divide"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="@dimen/chip_width"
+            android:layout_height="wrap_content"
+            android:text="@string/divide"
+            android:textAlignment="center"
+            android:textSize="@dimen/text_size" />
+    </com.google.android.material.chip.ChipGroup>
+
+    <EditText
+        android:id="@+id/et_second_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/second_number"
+        android:inputType="numberDecimal"
+        android:textSize="@dimen/text_size" />
+
+    <EditText
+        android:id="@+id/et_image_uri"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/bg_image_link"
+        android:inputType="textUri"
+        android:textSize="@dimen/text_size" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/b_start_calculator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/open_calculator"
+        android:textSize="@dimen/text_size" />
+
+</LinearLayout>
