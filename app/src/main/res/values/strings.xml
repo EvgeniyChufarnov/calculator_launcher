@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">CalculatorLauncher</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="multiply">*</string>
+    <string name="divide">/</string>
+    <string name="second_number">Второе число</string>
+    <string name="first_number">Первое число</string>
+    <string name="bg_image_link">Ссылка на картинку для фона</string>
+    <string name="open_calculator">Открыть калькулятор</string>
 </resources>
